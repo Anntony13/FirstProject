@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="fonts.css">
+    <title>Тестовое задание</title>
+</head>
+
+<body>
+    <section>
+        <!--форма поиска-->
+        <div class="container">
+            <form action="" method="post" id="search" class="search">
+                <label for="search">Enter inventory number, guid or bims id</label>
+                <br>
+                <input type="search" value="A-001234" id="search" autocomplete="on">
+                <button>Search</button>
+            </form>
+        </div>
+    </section>
+    <section>
+        <!--Обозначение результата поиска и данные оборудования-->
+        <div class="container">
+            <div class="card">
+                <div class="page-grid-title">
+                    <img src="img/scale.png" class="image">
+                    <p class="page_title">Аналитические весы OHAUS Adventurer АХ324 (B715976163)
+                    </p>
+                </div>
+                <div class="radio-select-form">
+                    <form action="" method="GET" name="period" class="radio">
+                        <select name="periods" form="period" size="1" class="select_month">
+                                <option value="1 month">1 month</option>
+                                <option value="2 months">2 months</option>
+                                <option value="3 months">3 months</option>
+                            </select>
+                        <br>
+                        <div class="radio-text">
+                            <input type="radio" name="period" id="Calibration" value="Calibration" checked> Calibration
+                            <br>
+                            <input type="radio" name="period" id="Measuring" value="Measuring"> Measuring
+                            <br>
+                            <input type="radio" name="period" id="Using" value="Using"> Using
+                        </div>
+                        <input type="submit" value="Generate report" class="radio_button">
+                    </form>
+                </div>
+                <div class="device_info">
+                    <p>Тип оборудования: <strong>Весы</strong></p>
+                    <p>Статус: <strong>Готов к работе</strong></p>
+                    <p>Изготовитель: <strong>Ohaus</strong></p>
+                    <p>Модель: <strong>AX-123</strong></p>
+                    <p>Ответственное подразделение (ремонт): <strong>Группа обслуживания лабораторного оборудования</strong></p>
+                    <p>Эксплуатирующее подразделение: <strong>Химико-аналитическая лаборатория 2.0</strong></p>
+                    <p>МОЛ: <strong>Иванов Иван Иванович</strong></p>
+                    <p>Территория: <strong>г. Санкт-Петербург (Нойдорф)</strong></p>
+                    <p>Серийный номер: <strong>B715976163</strong></p>
+                    <p>GUID: <a href="">508b2a71-662e-4983-ae0c-3cb0c1cd21c5</a></p>
+                    <p>Bims ID: <a href="">49db8db1-585f-4b9e-bbf0-8a59698edc8b</a></p>
+                    <p>Tam: <a href="">А-001234</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+            <div class="report">
+                <table>
+                    <caption>Calibration report</caption>
+                    <tr>
+                        <th style="width:120px;">Data</th>
+                        <th style="width:240px;">Used buffer solutions</th>
+                        <th style="width:120px;">Slope, %<br> Norm 95-105
+                        </th>
+                        <th style="width:120px;">Offset, mV<br> Norm ±(0-20)
+                        </th>
+                        <th style="width:240px;">User</th>
+                    </tr>
+                    <tr>
+                        <td class="one_td">04.10.19 10:23
+                        </td>
+                        <td>В1: № 2000460789536: pH 1.09<br> В2: № 2000460789536: pH 2.00<br> В3: № 2000460789536: pH 4.01<br> В4: № 2000460789536: pH 7.00<br> В5: № 2000460789536: pH 9.21<br></td>
+                        </td>
+                        <td>98.7
+                            <div class="ok"></div>
+                        </td>
+                        <td>-0.3
+                            <div class="ok"></div>
+                        </td>
+                        <td>Иванов Геннадий Петрович</td>
+                    </tr>
+                    <tr>
+                        <td class="">04.10.19 10:23
+                        </td>
+                        <td class="">В1: № 2000460789536: pH 1.09<br> В2: № 2000460789536: pH 2.00<br> В3: № 2000460789536: pH 4.01<br> В4: № 2000460789536: pH 7.00<br> В5: № 2000460789536: pH 9.21<br>
+                        </td>
+                        <td>98.7
+                            <div class="ok"></div>
+                        </td>
+                        <td>-0.3
+                            <div class="ok"></div>
+                        </td>
+                        <td>Петров Иван Геннадьевич</td>
+                    </tr>
+                    <tr>
+                        <td class="">04.10.19 10:23
+                        </td>
+                        <td class="">В1: № 2000460789536: pH 1.09<br> В2: № 2000460789536: pH 2.00<br> В3: № 2000460789536: pH 4.01<br> В4: № 2000460789536: pH 7.00<br> В5: № 2000460789536: pH 9.21<br></td>
+                        <td>98.7
+                            <div class="ok"></div>
+                        </td>
+                        <td>-0.3
+                            <div class="ok"></div>
+                        </td>
+                        <td>Петров Геннадий Иванович</td>
+                    </tr>
+                    <tr class="invisible">
+                        <td class="">04.10.19 10:23
+                        </td>
+                        <td class="">В1: № 2000460789536: pH 1.09<br> В2: № 2000460789536: pH 2.00<br> В3: № 2000460789536: pH 4.01<br> В4: № 2000460789536: pH 7.00<br> В5: № 2000460789536: pH 9.21</td>
+                        <td>90.1
+                            <div class="wrong"></div>
+                        </td>
+                        <td>-0.5
+                            <div class="ok"></div>
+                        </td>
+                        <td>Геннадьев Иван Петрович</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
